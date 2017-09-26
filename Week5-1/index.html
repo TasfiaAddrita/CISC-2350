@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>IKEA!</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<!-- Navigation bar -->
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="pages/page2.html">Page 2</a>
+		</nav>
+		<br />
+
+		<!-- Heading -->
+		<center><img src="img/ikealogo.png"></center>
+		<h1>Lets Learn about IKEA!</h1>
+		<!-- Table of contents -->
+		<ul>
+			<li><a href="#fun1">Fun Fact #1</a></li>
+			<li><a href="#fun2">Fun Fact #2</a></li>
+			<li><a href="#fun3">Fun Fact #3</a></li>
+			<li><a href="#fun4">Fun Fact #4</a></li>
+			<li><a href="#fun5">Fun Fact #5</a></li>
+			<li><a href="#survey">How much do you love IKEA?</a></li>
+		</ul>
+		<hr />
+
+		<!-- Fun Fact 1 -->
+		<div id="fun1">
+			<h2>Fun Fact #1: IKEA was founded by a 17-year old!</h2>
+			<p>Founded in Sweden in 1943 by then-17-year-old <a href="https://en.wikipedia.org/wiki/Ingvar_Kamprad" target="_blank">Ingvar Kamprad</a>, who was listed by Forbes Magazine (in its 2 November, 2015 issue) as one of the ten richest people in the world.</p>
+			<!-- figures of founder -->
+			<figure>
+				<img src="img/ingvar.jpg" width="310px">
+				<figcaption>Source: Addicted2Success</figcaption>
+			</figure>
+			<figure>
+				<img src="img/ingvar2.jpeg" width="310px">
+				<figcaption>Source: Aftonbladet</figcaption>
+			</figure>
+		</div>
+		<hr />
+
+		<!-- Fun Fact 2 -->
+		<div id="fun2">
+			<h2>Fun Fact #2: What does IKEA stand for?</h2>
+			<h3>I</h3>
+			<p>ngvar (founder's first name)</p>
+			<br />
+			<h3>K</h3>
+			<p>amprad (founder's last name)</p>
+			<br />
+			<h3>E</h3>
+			<p>lmtaryd (the farm where he grew up)</p>
+			<br />
+			<h3>A</h3>
+			<p>gunnaryd (his hometown in Smaland, southern Sweden)</p>
+		</div>
+		<hr />
+
+		<!-- Fun Fact 3 -->
+		<div id="fun3">
+			<h2>Fun Fact #3: Where are the largest IKEA stores located?</h2>
+
+			<!-- converted previous list into a table -->
+			<table>
+				<!-- header -->
+				<tr>
+					<th>Region and Country</th>
+					<th>Meters</th>
+					<th>Feet</th>
+				</tr>
+				<!-- 1st largest store -->
+				<tr>
+					<td>Gwangmyeong, Gyeonggi, South Korea</td>
+					<td>59,000 m2</td>
+					<td>635,070.7 sq ft</td>
+				</tr>
+				<!-- second largest store -->
+				<tr>
+					<td>Stockholm Kungens Kurva, Sweden</td>
+					<td>55,200 m2</td>
+					<td>594,167.9 sq ft</td>
+				</tr>
+				<!-- third largest store -->
+				<tr>
+					<td>Shanghai Baoshan, China</td>
+					<td>55,032 m2</td>
+					<td>592,359.5 sq ft</td>
+				</tr>
+				<!-- fourth largest store -->
+				<tr>
+					<td>Shanghai Pudong Beicai, China</td>
+					<td>49,400 m2</td>
+					<td>531,737.2 sq ft</td>
+				</tr>
+				<!-- fifth largest store -->
+				<tr>
+					<td>Wuxi, China</td>
+					<td>49,117 m2</td>
+					<td>528,691.0 sq ft</td>
+				</tr>
+			</table>
+			<br>
+			<!-- Google Maps iframe -->
+			<center><iframe src="https://www.google.com/maps/d/embed?mid=1pF-_g5rStasd3vScJEkCXXWyozQ" width="640" height="480"></iframe></center>
+		</div>
+		<hr />
+
+		<!-- Fun Fact 4 -->
+		<div id="fun4">
+			<h2>Fun Fact #4: IKEA is making us more narcissistic!</h2>
+			<p>Hidden Brain, a popular podcast from NPR that discusses about life's unseen patterns, explores into what our love for Swedish furniture says about narcissism.</p>
+			<!-- local audio -->
+			<audio controls>
+				<source src="audio/npr_ikea_podcast.mp3" />
+			</audio>
+		</div>
+		<hr />
+
+		<!-- Fun Fact 5 -->
+		<div id="fun5">
+			<h2>Fun Fact #5: People made songs expressing their love for IKEA!</h2>
+			<!-- Youtube iframe -->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/IUPu_ipbVB0" frameborder="0" allowfullscreen></iframe>
+			<!-- local video -->
+			<video width="560" height="315" controls>
+				<source src="videos/IKEA_Parody.mp4" type="video/mp4">
+			</video>
+		</div>
+		<hr />
+
+		<!-- survey -->
+		<div id="survey">
+			<h2>How much do you love IKEA?</h2>
+			<!-- user input via form -->
+			<form>
+				<input type="radio" name="" value=""> More than my own life <br>
+				<input type="radio" name="" value=""> Bigger than the store in Sweden but less than the store in South Korea <br>
+				<input type="radio" name="" value=""> Smaller than the smallest screw available <br><br>
+				<textarea name="" rows="8" cols="80" placeholder="Explain why"></textarea> <br><br>
+				<input type="submit" name="" value="Submit my answer!">
+			</form>
+		</div>
+	</body>
+</html>
