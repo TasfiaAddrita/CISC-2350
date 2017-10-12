@@ -28,6 +28,7 @@ header h1 {
 header nav {
     display: inline-block;
     float: right;
+    padding-top: 10px;
 }
 
 header li {
