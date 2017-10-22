@@ -1,0 +1,26 @@
+.writing-mode-property h1 {
+    writing-mode: vertical-rl;
+    color: red;
+    position: absolute;
+    float: left;
+}
+
+.writing-mode-property p, a {
+    padding: 0px 100px;
+}
+
+.transform-property-description {
+    padding: 0px 100px;
+    text-align: center;
+
+}
+
+.transform-property {
+    transform: rotateY(180deg);
+}
+
+.transform-property img {
+    display: block;
+    margin: auto;
+    height: 250px;
+}
