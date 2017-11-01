@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+#static, #absolute, #relative, #fixed {
+    display: none;
+}
+
+#static p {
+    display: inline-block;
+    width: 300px;
+    border: 5px blue dashed;
+    padding: 10px;
+    margin: 5px;
+}
+
+#absolute-heading {
+    color: red;
+    position: absolute;
+    margin: 100px;
+    padding: 50px;
+    border: 5px blue dashed;
+}
+
+#relative-heading {
+    display: inline;
+    color: red;
+    position: relative;
+    margin: 100px;
+    padding: 50px;
+    border: 5px blue dashed;
+}
+
+#fixed p {
+    padding: 50px;
+    border: 10px purple dotted;
+    font-size: 50px;
+}
+
+#fixed-heading {
+    color: red;
+    position: fixed;
+    padding-top: 200px;
+    text-align: center;
+}
