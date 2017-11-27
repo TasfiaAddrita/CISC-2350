@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Satisfy');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #eff5ff;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    transition: color 2s;
+    cursor: pointer;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+#landing {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0 20px;
+    transition: width 2s;
+    float: left;
+
+    background: linear-gradient(120deg, #360033, #0b8793);
+    background-size: 400% 400%;
+
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#landing h1 {
+    font-family: 'Satisfy';
+    font-size: 50px;
+    /*opacity: 0.5;*/
+}
+
+#landing h3 {
+    /*opacity: 0.5;*/
+}
+
+.right-panel {
+    display: none;
+    padding: 75px 20px 20px 20px;
+    height: calc(100vh - 95px);
+    /*background-color: #eff5ff;*/
+    color: black;
+    overflow: scroll;
+}
+
+#about {
+    display: none;
+    flex-direction: column;
+    color: black;
+    /*transition: color 2s;*/
+}
+
+#about h1 {
+    margin-bottom: 20px;
+}
+
+#projects {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+#projects h1 {
+    margin-bottom: 10px;
+}
+
+.row {
+    /*display: flex;*/
+    /*margin-bottom: 100px;*/
+    /*width: 100%;*/
+}
+
+.item {
+    /*display: flex;*/
+    display: inline;
+    position: relative;
+    float: left;
+    width: 350px;
+    /*width: 47%;*/
+    height: 200px;
+    margin: 10px 20px 10px 0px;
+    /*margin-bottom: 100px;*/
+    background-color: lightpink;
+}
+
+
+
+#contact {
+    display: none;
+    width: 700px;
+    height: 400px;
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: black;
+    opacity: 0.85;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+}
+
+footer img {
+    width: 30px;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+    transition: 0.5s;
+}
+
+footer img:hover {
+    filter: invert();
+}
+
+footer p {
+    font-size: 10px;
+    /*opacity: 0.5;*/
+}
