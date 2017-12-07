@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Tasfia Addrita</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     </head>
     <body>
+        <!-- navigation bar -->
         <nav>
             <ul>
                 <li><a id="nav-about">about</a></li>
@@ -15,9 +17,15 @@
             </ul>
         </nav>
 
+        <!-- <div class="circle"></div> -->
+
+        <!-- initial landing screen -->
         <div id="landing">
-            <h1>Tasfia Addrita</h1>
-            <h3>Someone trying to get her life together and hates CSS :)</h3>
+            <canvas id="landing-bg"></canvas>
+            <div id="landing-content">
+                <h1>Tasfia Addrita</h1>
+                <h3>Someone trying to get her life together and hates CSS :)</h3>
+            </div>
             <footer>
                 <a href="https://www.github.com/TasfiaAddrita" target="_blank"><img src="images/github.png" alt=""></a>
                 <a href="https://www.linkedin.com/in/TasfiaAddrita" target="_blank"><img src="images/linkedin.png" alt=""></a>
@@ -25,11 +33,67 @@
             </footer>
         </div>
 
+        <!-- when user clicks on the items in nav bar -->
         <div class="right-panel">
+            <!-- about section -->
             <div id="about">
-                <h1>Hi, I'm Tasfia</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h1>Hi, I'm Tasfia!</h1>
+                <p>I'm a sophomore at Fordham University, where I'm studying Math and Computer Science. I'm interested in the intersection between medicine and technology and hope to pursue medical engineering in the future!</p>
+                <br>
+                <!-- experience tab -->
+                <h2 id="experience-header">EXPERIENCE</h2><hr>
+                <div id="experience-box">
+                    <div class="experience">
+                        <h3>Advisor at Codecademy</h3>
+                        <h4>October 2016 - Present // New York, NY</h4>
+                        <p>Advising and mentoring Codecademy Pro students around the world in defining goals, reviewing coding concepts, guiding them to additional resources, and helping them debug code and pass exercises.</p>
+                    </div>
+                    <div class="experience">
+                        <h3>Photoshop Javascript Engineering Intern at Adobe</h3>
+                        <h4>June - December 2016 // San Jose, CA</h4>
+                        <p>Implemented the next generation of Photoshop’s interface and workflow features</p>
+                        <ul>
+                            <li>Built a database of Photoshop UI controls that maps to the internal Photoshop DOM.</li>
+                            <li>Created prototypes of user interfaces in JavaScript and HTML for manipulating Photoshop by leveraging this controls database.</li>
+                        </ul>
+                    </div>
+                    <div class="experience">
+                        <h3>Software Engineering Intern at Bank of America - Merrill Lynch</h3>
+                        <h4>July - August 2014 // Jersey City, NJ</h4>
+                        <p>Developed new technologies and systems to measure and manage counter-party credit risk under the Credit Risk Technology department.</p>
+                        <ul>
+                            <li>Programmed test values for the base rule on the Nucleus GUI. Once GUI was modified, had to test backend system to make sure it was working properly.</li>
+                            <li>Created BaselQuestions tab on ATOM GUI, as well as field references relating to the tab.</li>
+                            <li>All code was reviewed, perfected, and pushed to production.</li>
+                            <li>Helped team get ahead and meet a regulatory deadline for the FRB (Federal Reserve Board) faster than expected.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- leadership tab -->
+                <h2 id="leadership-header">LEADERSHIP</h2><hr>
+                <div id="leadership-box">
+                    <div class="experience">
+                        <h3>Student Leader at CodePath University</h3>
+                        <h4>November 2015 - May 2016 // Bronx, NY</h4>
+                        <p>CodePath University is an education technology startup that provides free, accelerated engineering classes for students.</p>
+                    </div>
+                    <div class="experience">
+                        <h3>Programming Director at Computer Science Society</h3>
+                        <h4>January - May 2016 // Bronx, NY</h4>
+                    </div>
+                </div>
+                <!-- skills tab -->
+                <h2 id="skills-header">SKILLS</h2><hr>
+                <div id="skills-box">
+                    <div class="lang-icon"><i class="devicon-python-plain-wordmark"></i></div>
+                    <div class="lang-icon"><i class="devicon-cplusplus-plain-wordmark"></i></div>
+                    <div class="lang-icon"><i class="devicon-html5-plain-wordmark"></i></div>
+                    <div class="lang-icon"><i class="devicon-css3-plain-wordmark"></i></div>
+                    <div class="lang-icon"><i class="devicon-javascript-plain"></i></div>
+                </div>
             </div>
+
+            <!-- projects section -->
             <div id="projects">
                 <h1>Projects</h1>
                 <div class="row">
@@ -47,14 +111,39 @@
             </div>
         </div>
 
+        <!-- contact form -->
         <div id="contact">
-            <h1>Lets talk</h1>
-            Name: <input type="text" name="" value=""><br>
-            Email: <input type="email"><br>
-            Message: <br><textarea name="name" rows="8" cols="80"></textarea>
+            <h1>Lets talk!</h1>
+            Name: <br><input type="text" name="" value=""><br>
+            Email: <br><input type="email"><br>
+            Subject: <br><input type="text" name="" value=""><br>
+            Message: <br><input id="message" type="text" name="" value=""><br>
+            <input type="submit" name="" value="SUBMIT">
         </div>
 
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/granim.min.js"></script>
+    <script type="text/javascript">
+        var granimInstance = new Granim ({
+            element: '#landing-bg',
+            name: 'basic-gradient',
+            direction: 'diagonal', // 'diagonal', 'top-bottom', 'radial'
+            opacity: [1, 1],
+            isPausedWhenNotInView: true,
+            states: {
+                "default-state": {
+                    gradients: [
+                        // ['#AA076B', '#61045F'],
+                        // ['#02AAB0', '#00CDAC'],
+                        // ['#DA22FF', '#9733EE']
+                        ['#005C97', '#363795'],
+                        ['#2a0845', '#6441A5'],
+                        ['#614385', '#516395']
+                    ]
+                }
+            }
+        });
+    </script>
 </html>
